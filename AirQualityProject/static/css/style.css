@@ -1,0 +1,122 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+  }
+  
+  /* Container */
+  .container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 60%;
+    margin: 40px auto;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .container:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Headings */
+  h1 {
+    color: #333;
+  }
+  
+  /* Chart (Plot Image) */
+  .chart {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  /* Buttons */
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .btn {
+    text-decoration: none;
+    background: #007BFF;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.3s ease;
+    display: inline-block;
+  }
+  
+  .btn:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  /* Input Fields */
+  .input-field {
+    padding: 10px;
+    width: 80%;
+    border: 2px solid #007BFF;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: 0.3s ease;
+  }
+  
+  .input-field:focus {
+    border-color: #0056b3;
+    box-shadow: 0px 0px 10px rgba(0, 86, 179, 0.5);
+  }
+  
+  /* Table Styling */
+  .table-container {
+    overflow-x: auto;
+    margin: 20px auto;
+    width: 100%;
+  }
+  
+  .styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    min-width: 400px;
+  }
+  
+  .styled-table th, .styled-table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+  
+  .styled-table th {
+    background: #007BFF;
+    color: white;
+  }
+  
+  .styled-table tr:nth-child(even) {
+    background: #f2f2f2;
+  }
+  
+  .styled-table tr:hover {
+    background: #ddd;
+    transition: 0.3s;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .fade-in {
+    animation: fadeIn 1.5s ease-in;
+  }
+  

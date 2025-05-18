@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>City Air Quality</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <div class="container fade-in">
+    <h1>PM2.5 Analysis for {{ city }}</h1>
+    {% if message %}
+      <p>{{ message }}</p>
+    {% else %}
+      <img src="{{ plot_url }}" alt="PM2.5 Levels for {{ city }}" class="chart">
+    {% endif %}
+    <div class="buttons">
+      <a href="/city" class="btn">🔄 Analyze Another City</a>
+      <a href="/" class="btn">🏠 Back to Home</a>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Air Quality Analysis</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <div class="container fade-in">
+    <h1>PM2.5 Air Quality Analysis (2020-2024)</h1>
+    <img src="{{ plot_url }}" alt="PM2.5 Levels Over Time" class="chart">
+    <div class="buttons">
+      <a href="/data-preview" class="btn">📊 View Dataset</a>
+      <a href="/null-check" class="btn">🔍 Check Missing Values</a>
+      <a href="/city" class="btn">🏙️ Analyze a City</a>
+    </div>
+  </div>
+</body>
+</html>
